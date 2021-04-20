@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-COPY ["EshopDemoApi1/EshopDemoApi1.csproj", "EshopDemoApi1/"]
-RUN dotnet restore "EshopDemoApi1/EshopDemoApi1.csproj"
+COPY ["CatalogDemo.API/CatalogDemo.API.csproj", "CatalogDemo.API/"]
+RUN dotnet restore "CatalogDemo.API/CatalogDemo.API.csproj"
 COPY . .
-WORKDIR "/src/EshopDemoApi1"
-RUN dotnet build "EshopDemoApi1.csproj" -c Release -o /app/build
+WORKDIR "/src/CatalogDemo.API"
+RUN dotnet build "CatalogDemo.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "EshopDemoApi1.csproj" -c Release -o /app/publish
+RUN dotnet publish "CatalogDemo.API.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "EshopDemoApi1.dll"]
+ENTRYPOINT ["dotnet", "CatalogDemo.API.dll"]

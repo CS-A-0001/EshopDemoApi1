@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogDemo.API", "EshopDemoApi1\CatalogDemo.API.csproj", "{10CEB1DE-A8E2-46A7-9738-AC7425883226}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogDemo.API", "CatalogDemo.API\CatalogDemo.API.csproj", "{10CEB1DE-A8E2-46A7-9738-AC7425883226}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.UnitTests", "Catalog.UnitTests\Catalog.UnitTests.csproj", "{24FF2706-BBCC-46F7-9507-E7B98277E2FD}"
 EndProject

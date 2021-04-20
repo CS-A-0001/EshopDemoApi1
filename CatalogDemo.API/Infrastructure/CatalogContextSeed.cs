@@ -38,7 +38,7 @@ namespace CatalogDemo.API.Infrastructure
                 string[] requiredHeaders = { "name", "imguri", "price", "description"};                
                 csvheaders = GetHeaders(csvFileCatalogItems, requiredHeaders);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // In case of exception seed won't be initialized
                 return Enumerable.Empty<Product>();

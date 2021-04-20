@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EshopDemoApi1\CatalogDemo.API.csproj" />
+    <ProjectReference Include="..\CatalogDemo.API\CatalogDemo.API.csproj" />
   </ItemGroup>
 
 </Project>
