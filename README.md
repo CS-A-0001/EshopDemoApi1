@@ -13,7 +13,7 @@ It's seeded by mocked data and has 3 endpoints.
  - GET items
 
 API has two versions. For versioning is used URL pattern. Version 2.0 extends GET items endpoint by paging.
-Solution consists of two projects WEB API and unit test. Logging is not included. On first run seed of database is performed.
+Solution consists of two projects WEB API and unit test. Logging is not included. On first run seed of database is performed. Seed data were generated using https://www.mockaroo.com/
 
 ### Prequisities for running
 Installed Docker desktop and running, Visual studio 2019
